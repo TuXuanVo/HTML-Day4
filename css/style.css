@@ -1,0 +1,527 @@
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.narBar span:first-child {
+  padding-left: 0;
+}
+
+.headerRight span {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.language {
+  margin-left: 20px;
+}
+
+.activePage {
+  font-weight: 500;
+  color: #00B9EF;
+}
+
+.superRadiusBtn {
+  background-color: #00B9EF;
+  color: white;
+  font-weight: 500;
+  padding: 3px 5px;
+  border-radius: 20px;
+}
+
+.language span {
+  padding: 0;
+}
+
+.language {
+  border: #DAE5F2 solid 0.5px;
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+.activeLanguage {
+  color: #DAE5F2;
+}
+
+.iconMenu {
+  background-color: #F7FBFF;
+  border: #DAE5F2 solid 1px;
+  border-radius: 8px;
+  padding: 5px 7px;
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.menu p {
+  margin: 0;
+  padding: 5px 0 5px 20px;
+  border-top: #DAE5F2 solid 1px;
+}
+
+.menu p:hover {
+  background-color: #DAE5F2;
+}
+
+.showElement {
+  display: block;
+}
+
+.banner {
+  background: url("../public/img/background.png");
+  height: 430px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner::before {
+  position: absolute;
+  inset: 0;
+  background-color: #02203A;
+  opacity: 0.8;
+  content: "";
+  z-index: 0;
+}
+
+.banner p {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+.banner > div {
+  z-index: 1;
+}
+
+.searchBox {
+  z-index: 1;
+}
+
+.searchBox span {
+  color: white;
+}
+
+.itemSearchBox input {
+  width: 500px;
+  border: #DAE5F2 solid 1px;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.primayBtn {
+  background-color: #00B9EF;
+  border-radius: 5px;
+  padding: 15px 30px;
+  border-width: 0;
+  color: white;
+}
+
+.productiveTeam {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.impressTextOrange {
+  color: #FF9900;
+  font-weight: 700;
+}
+
+.imgProductiveTeam {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.browseJobs {
+  background-color: #F9FCFF;
+}
+
+.browseJobsTitle {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+
+.impressTextBlue {
+  color: #00B9EF;
+  font-weight: 700;
+}
+
+.jobPositions {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.positionsLeft div {
+  margin-right: 8px;
+}
+
+.positionsRight div {
+  margin-left: 8px;
+}
+
+.positionItem {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.positionItem::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #00B9EF;
+  width: 2px;
+  height: 24px;
+}
+
+.quantityPositions {
+  position: relative;
+  padding-left: 10px;
+}
+
+.quantityPositions::before {
+  content: "";
+  background-color: #DAE5F2;
+  width: 1px;
+  height: 32px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.featureJobsTitle {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.featureJobsItem {
+  display: flex;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0px 0px 24px rgba(0, 25, 54, 0.1);
+  margin-bottom: 10px;
+}
+
+.featureJobsItemMore {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 10px;
+  background-color: #DAE5F2;
+}
+
+.moreJobText {
+  font-size: 1.5rem;
+  color: #00428E;
+}
+
+.moreJobTextBold {
+  font-size: 1.5rem;
+  color: #00428E;
+  font-weight: 700;
+}
+
+.imgFeatureJob {
+  border-radius: 10px;
+}
+
+.featureJobsItemContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.jobTitle {
+  font-weight: 800;
+}
+
+.jobAddress {
+  color: #708496;
+}
+
+.workTime {
+  font-size: 0.8rem;
+  color: #E9473F;
+  border-radius: 4px;
+  background-color: #F7FBFF;
+  padding: 5px;
+  width: fit-content;
+}
+
+.detailFeatureJob {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.sopnsorTitle {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.imgSponsor {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.imgSponsor img {
+  margin: 0 25px;
+}
+
+.footer {
+  background-color: #02203A;
+  color: white;
+  padding-top: 50px;
+  font-size: 0.8rem;
+}
+.footer .footerContainer1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer .footerContainer1 .contactInfo {
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+  justify-content: space-between;
+}
+.footer .footerContainer1 .contactInfo p {
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+.footer .footerContainer1 .contactInfo .contactItem {
+  display: flex;
+  align-items: flex-start;
+}
+.footer .footerContainer1 .titleFooter {
+  font-weight: 700;
+}
+.footer .footerContainer2 {
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.footer .footerContainer2 .socialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 12px;
+  }
+  .header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .headerRight span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .language {
+    border: #DAE5F2 solid 0.5px;
+    border-radius: 20px;
+    padding: 3px 5px;
+  }
+  .language span {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+  .header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .narBar,
+.login,
+.language {
+    display: none;
+  }
+  .iconMenu {
+    display: block;
+    margin-left: 20px;
+  }
+  .banner {
+    height: 300px;
+  }
+  .banner p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .imgProductiveTeam {
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+  .imgProductiveTeam img {
+    margin: 0 25px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+  .footer .footerContainer1 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+  .banner p {
+    margin: 0.5rem 0;
+  }
+  .itemSearchBox input {
+    width: 300px;
+    padding: 10px;
+  }
+  .primayBtn {
+    padding: 10px 15px;
+  }
+  .imgProductiveTeam {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .positionItem {
+    width: 250px;
+  }
+  .imgSponsor {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .imgSponsor img {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .jobPositions {
+    display: grid;
+  }
+  .positionsLeft div {
+    margin-right: 0px;
+  }
+  .positionsRight div {
+    margin-left: 0px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer .footerContainer1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer .contactInfo {
+    margin-top: 20px;
+  }
+  .footer .footerContainer2 {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerContainer2 .socialMedia {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .banner {
+    justify-content: space-around;
+  }
+  .banner p {
+    font-size: 1.8rem;
+  }
+  .itemSearchBox {
+    display: grid;
+  }
+  .itemSearchBox p {
+    font-size: 1rem;
+  }
+  .itemSearchBox input {
+    width: 200px;
+  }
+  .itemSearchBox button {
+    width: 222px;
+  }
+  .imgProductiveTeam {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgProductiveTeam img {
+    margin-bottom: 15px;
+  }
+  .row {
+    margin: 0 10px;
+  }
+  .imgSponsor img {
+    margin: 0 0 15px 0;
+  }
+  .footer .footerContainer1 .contactInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
